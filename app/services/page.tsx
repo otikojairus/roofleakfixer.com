@@ -24,7 +24,6 @@ export default function ServicesPage() {
           {SERVICE_HUBS.map((page, index) => (
             <Link className={`pulse-card ${index % 3 === 0 ? "pulse-card-accent" : ""}`} key={page.pageSlug} href={toPath(page.pageSlug)}>
               <h2>{page.pageTitle.replace(/\s*\|.*/, "")}</h2>
-              <p>{page.searchIntent}</p>
             </Link>
           ))}
         </section>
